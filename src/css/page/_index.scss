@@ -1,0 +1,175 @@
+
+//header
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    color: $f2eW1-first;
+    font-style: italic;
+    background-color: $f2eW1-second;
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+}
+
+//content
+
+h2 {
+    margin: 0;
+}
+
+.col-6 {
+    @include col(left, 2, 0, 10px);
+}
+
+.col-6 {
+    img {
+        float: right;
+        background: #FFFFFF;
+        border: 4px solid #000000;
+        width: 292px;
+        height: 438px;
+    }
+}
+
+.col-6.hexschool {
+    h2 {
+        margin-bottom: 16px;
+        width: 317px;
+        height: 52px;
+        color: #fff;
+        background-color: #000;
+        font-size: 36px;
+        line-height: 52px;
+        text-align: center;
+    }
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+p {
+    display: inline-block;
+    padding-right: 20px;
+    line-height: 24px;
+}
+
+.rate {
+    font-weight: bold;
+    margin-bottom: 24px;
+    .subtitle {
+        float: left;
+        padding-right: 39px;
+        line-height: 24px;
+    }
+    .star li {
+        display: inline-block;
+    }
+}
+
+.summary {
+    p {
+        display: block;
+        font-weight: bold;
+    }
+    .info {
+        width: 350px;
+        height: 202px;
+        line-height: 24px;
+        display: block;
+        .hexschool p {
+            margin-bottom: 24px;
+            font-weight: initial;
+        }
+    }
+}
+
+@include for-size(pad-portrait-only) {
+    .col-6 {
+        @include col(left, 1, 0, 10px);
+        img {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .col-6.hexschool {
+        h2 {
+            width: 100%;
+        }
+    }
+}
+
+//footer
+
+.countainer {
+    margin-top: 28px;
+}
+
+.chapters {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        padding: 0;
+        font-size: 24px;
+        color: #fff;
+        background-color: #000;
+        width: 181px;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+    }
+}
+
+.page {
+    padding: 10px 0;
+    width: 620px;
+    height: 106px;
+    border: 4px solid black;
+    li {
+        position: relative;
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+    span {
+        float: right;
+        position: absolute;
+        margin-left: 16px;
+        padding: 2px 12px;
+        font-size: 14px;
+        border: 1px solid #50FF44;
+        background: #50FF44;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+        bottom: 8px;
+        left: 250px;
+    }
+}
+
+@include for-size(pad-portrait-only) {
+    .chapters {
+        margin: 0;
+        max-width: 100%;
+    }
+    .page {
+        width: 100%;
+        span {
+            margin-left: 5px;
+            padding: 2px 10px;
+        }
+    }
+}
