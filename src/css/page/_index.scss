@@ -7,7 +7,8 @@
 
 .khView {
   position: relative;
-  background-image: url('images/the-urban-landscape-1698285.png');
+  background-image: url('https://github.com/Jimmywei01/KHTravel/blob/master/src/images/the-urban-landscape-1698285.png?raw=true');
+  
   width: 1024px;
   height: 380px;
 }
@@ -47,19 +48,20 @@
 }
 
 .subtitle {
-  // width: 91px;
+  width: 91px;
   height: 18px;
   font-size: 18px;
   color: #000000;
   position: relative;
-  padding: 20px 0 0 26px;
+  top: 20px;
+  left: 26px;
 }
 
 .starArea {
   position: relative;
   display: flex;
   justify-content: space-around;
-  top: 14px;
+  top: 34px;
 
   .btn {
     border-radius: 5px;
@@ -177,7 +179,7 @@
     top: -16px;
 
     &::before {
-      content: url(lightbox/icons_clock.png);
+      content: url('https://github.com/Jimmywei01/KHTravel/blob/master/src/images/icons_clock.png?raw=true');
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -190,7 +192,7 @@
     top: -14px;
 
     &::before {
-      content: url(lightbox/icons_pin.png);
+      content: url('https://github.com/Jimmywei01/KHTravel/blob/master/src/images/icons_pin.png?raw=true');
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -203,7 +205,7 @@
     top: -10px;
 
     &::before {
-      content: url(lightbox/icons_phone.png);
+      content: url('https://github.com/Jimmywei01/KHTravel/blob/master/src/images/icons_phone.png?raw=true');
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -219,7 +221,7 @@
   position: relative;
 
   &::before {
-    content: url(lightbox/icons_tag.png);
+    content: url('https://github.com/Jimmywei01/KHTravel/blob/master/src/images/icons_tag.png?raw=true');
     display: inline-block;
     width: 16px;
     height: 16px;
