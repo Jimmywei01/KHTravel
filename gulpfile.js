@@ -37,7 +37,7 @@ gulp.task('babel', function () {
   return gulp.src(['./src/js/**/*.js'])
     .pipe($.plumber())
     .pipe($.sourcemaps.init())   // 找出合併檔
-    .pipe($.concat('all.js'))
+    .pipe($.concat('xhr.js'))
     .pipe($.babel({              // 要轉譯成的版本
       presets: ['es2015']
     }))

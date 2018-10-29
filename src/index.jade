@@ -1,52 +1,40 @@
 extends _layout.jade
 
 block index
-  #header
-    .title
-      h1 Comicomic
-      
-    
-  #content
-    .countainer
-       .row.clearfix
-         .col-6.img
-           img(src="https://hexschool.github.io/THE_F2E_Design/week5-comic%20viewer/assets/comic%20cover.png", alt="none")
-         .col-6.hexschool
-           h2 MY HEXSCHOOL
-           .genres 
-            p.subtitle Genres
-            p Fusce/vehicula/dolor
-           .author
-            p.subtitle Author
-            p Namae Shiranai
-           .status 
-            p.subtitle Status
-            p Ongoing
-           .rate
-            p.subtitle Rate
-            ul.star
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="far fa-star"></i>
-           .summary
-             p Summary
-             .info
-               p If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die. 
-               <br>
-               p Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with a plurality of other mortals. 
-
-  #footer
-    .countainer
-      .chapters
-        p All Chapters
-        ul.page
-          li
-            a(href="chapter1.html") Chapter 1: The F2E Challenge Start!
-          li
-            a(href="chapter1.html") Chapter 2: Todo List Going Crazy!
-            span NEW
+   #wapper
+      #header
+        .khView
+          h1.title - - 請選擇行政區 - -
+          select.area(name='area')
+            img(src='lightbox/icons_down.png', alt='none')
+                 
+            option(value='1') - - 請選擇行政區 - -
+        .box
+          h3.subtitle 熱門行政區
+          .starArea
+            button.btn(value='苓雅區') 苓雅區
+            button.btn(value='三民區') 三民區
+            button.btn(value='新興區') 新興區
+            button.btn(value='美濃區') 美濃區
+     
+      #content
+        .lineBox
+          .line
+          .border
+            img.lineImage(src='lightbox/icons_down.png', alt='none')
+        .list
+          .areaTitle
+          .row
+   
+     
+      #footer
+        h3.fTitle 高雄旅遊網
+         
+        h3.fSubtitle 資料來源：高雄市政府 
+         
+        .goTop
+          a(href='#header')
+            img(src='lightbox/btn_goTop.png', alt='none')
       
     
 
