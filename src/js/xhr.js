@@ -46,17 +46,28 @@ function xhrData() {
  select.addEventListener('change', function(e){
     value = e.target.value   // 篩選後的直帶入當作 value 為了之後的info比對
     strData()
- }, 'false')
+ }, false)
 
- // 熱門行政區 點選顯示區域資料
- // 多子選項必須要先拿出來才能選擇 否則 addEventlistener 錯誤
- let btns = document.querySelectorAll('.btn')
- for (let i = 0; i < btns.length; i++) {
-   btns[i].addEventListener('click', function(e){
-     value = e.target.value // 篩選後的值帶入當作 value 為了之後的info比對
-     strData()
-   }, 'false')
- }
+//  // 熱門行政區 點選顯示區域資料
+//  // 多子選項必須要先拿出來才能選擇 否則 addEventlistener 錯誤
+//  let btns = document.querySelectorAll('.btn')
+//  for (let i = 0; i < btns.length; i++) {
+//    btns[i].addEventListener('click', function(e){
+//      value = e.target.value // 篩選後的值帶入當作 value 為了之後的info比對
+//      strData()
+//    }, false)
+//  }
+
+ // 改寫 由父元素裡頭監聽裡頭子元素的作法。好處就是效能較好，網頁上不會有太多監聽影響效能。
+let btns = document.querySelector('.starArea')
+ btns.addEventListener('click',function(e){
+   if (e.target.nodeName !== "BUTTON"){return}
+   value=e.target.value
+   strData()
+ },false)
+
+
+
 
  
  
