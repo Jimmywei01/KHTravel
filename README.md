@@ -1,5 +1,5 @@
 # 高雄旅遊網
-![首頁](https://github.com/Jimmywei01/KHTravel/blob/master/src/images/icons_phone.png "首頁畫面")
+![首頁](https://github.com/Jimmywei01/KHTravel/blob/gh-pages/src/images/icons_phone.png "首頁畫面")
 
 ## Demo
 https://jimmywei01.github.io/KHTravel/
@@ -14,7 +14,7 @@ https://jimmywei01.github.io/KHTravel/
 ## 內容介紹
 ### 熱門區域展示列表
 - 可利用區域篩選出此區域景點
-![](https://github.com/Jimmywei01/KHTravel/blob/master/src/images/demo2.png)
+![](https://github.com/Jimmywei01/KHTravel/blob/gh-pages/src/images/demo2.png)
 
 ## Statement
 本作品的文字內容及圖片，純為個人網頁技術練習，不做任何商業行為
