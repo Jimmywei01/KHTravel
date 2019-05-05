@@ -10,6 +10,7 @@ https://jimmywei01.github.io/KHTravel/
 ## 使用技術: 
 + pug
 + sass
++ 串接開放平台 json 資料
 
 ## 內容介紹
 ### 熱門區域展示列表
