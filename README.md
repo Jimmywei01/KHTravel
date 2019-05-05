@@ -1,5 +1,5 @@
 # 高雄旅遊網
-![首頁](https://github.com/Jimmywei01/KHTravel/blob/gh-pages/src/images/icons_phone.png "首頁畫面")
+![首頁](https://github.com/Jimmywei01/KHTravel/blob/gh-pages/src/images/demo1.png "首頁畫面")
 
 ## Demo
 https://jimmywei01.github.io/KHTravel/
